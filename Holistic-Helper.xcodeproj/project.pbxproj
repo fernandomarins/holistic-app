@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		5571BFEA1FDD94FB003812A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571BFE91FDD94FB003812A9 /* AppDelegate.swift */; };
-		5571BFEC1FDD94FB003812A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571BFEB1FDD94FB003812A9 /* ViewController.swift */; };
+		5571BFEC1FDD94FB003812A9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571BFEB1FDD94FB003812A9 /* MainViewController.swift */; };
 		5571BFEF1FDD94FB003812A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5571BFED1FDD94FB003812A9 /* Main.storyboard */; };
 		5571BFF11FDD94FB003812A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5571BFF01FDD94FB003812A9 /* Assets.xcassets */; };
 		5571BFF41FDD94FB003812A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5571BFF21FDD94FB003812A9 /* LaunchScreen.storyboard */; };
+		5571BFFC1FDD9661003812A9 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571BFFB1FDD9661003812A9 /* CollectionViewCell.swift */; };
+		5571BFFE1FDD9B4B003812A9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571BFFD1FDD9B4B003812A9 /* GradientView.swift */; };
+		5571C0001FDDA035003812A9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571BFFF1FDDA035003812A9 /* SearchViewController.swift */; };
+		5571C0041FDDA0CC003812A9 /* MantraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571C0031FDDA0CC003812A9 /* MantraViewController.swift */; };
+		5571C0061FDDA2C7003812A9 /* SharedMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571C0051FDDA2C7003812A9 /* SharedMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5571BFE61FDD94FB003812A9 /* Holistic-Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Holistic-Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5571BFE91FDD94FB003812A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5571BFEB1FDD94FB003812A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5571BFEB1FDD94FB003812A9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5571BFEE1FDD94FB003812A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5571BFF01FDD94FB003812A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5571BFF31FDD94FB003812A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5571BFF51FDD94FB003812A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5571BFFB1FDD9661003812A9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		5571BFFD1FDD9B4B003812A9 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		5571BFFF1FDDA035003812A9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5571C0031FDDA0CC003812A9 /* MantraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MantraViewController.swift; sourceTree = "<group>"; };
+		5571C0051FDDA2C7003812A9 /* SharedMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,34 @@
 			isa = PBXGroup;
 			children = (
 				5571BFE91FDD94FB003812A9 /* AppDelegate.swift */,
-				5571BFEB1FDD94FB003812A9 /* ViewController.swift */,
+				5571C0011FDDA03D003812A9 /* ViewController */,
+				5571C0021FDDA04C003812A9 /* View */,
 				5571BFED1FDD94FB003812A9 /* Main.storyboard */,
+				5571C0051FDDA2C7003812A9 /* SharedMethods.swift */,
 				5571BFF01FDD94FB003812A9 /* Assets.xcassets */,
 				5571BFF21FDD94FB003812A9 /* LaunchScreen.storyboard */,
 				5571BFF51FDD94FB003812A9 /* Info.plist */,
 			);
 			path = "Holistic-Helper";
+			sourceTree = "<group>";
+		};
+		5571C0011FDDA03D003812A9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5571BFEB1FDD94FB003812A9 /* MainViewController.swift */,
+				5571BFFF1FDDA035003812A9 /* SearchViewController.swift */,
+				5571C0031FDDA0CC003812A9 /* MantraViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5571C0021FDDA04C003812A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5571BFFB1FDD9661003812A9 /* CollectionViewCell.swift */,
+				5571BFFD1FDD9B4B003812A9 /* GradientView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5571BFEC1FDD94FB003812A9 /* ViewController.swift in Sources */,
+				5571C0061FDDA2C7003812A9 /* SharedMethods.swift in Sources */,
+				5571C0001FDDA035003812A9 /* SearchViewController.swift in Sources */,
+				5571BFEC1FDD94FB003812A9 /* MainViewController.swift in Sources */,
 				5571BFEA1FDD94FB003812A9 /* AppDelegate.swift in Sources */,
+				5571C0041FDDA0CC003812A9 /* MantraViewController.swift in Sources */,
+				5571BFFE1FDD9B4B003812A9 /* GradientView.swift in Sources */,
+				5571BFFC1FDD9661003812A9 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
